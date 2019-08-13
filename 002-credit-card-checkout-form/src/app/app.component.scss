@@ -12,13 +12,16 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 section {
+  margin-top: 200px;
   max-width: 300px;
   margin: 0 auto;
   padding: 32px 40px;
   border: none;
+  border-radius: 10px;
   box-shadow: 1px 1px 5px 1px rgba($color: dimgrey, $alpha: 0.5);
   font-family: 'Courier New', Courier, monospace;
   line-height: 2;
+  background: url('../assets/images/bg.jpg') no-repeat 50% 4%;
 
   .title {
     text-align: center;
@@ -57,10 +60,13 @@ section {
     }
     &__expire--day {
       width: 40px;
+      &:after {
+        position: absolute;
+        content: '/';
+      }
     }
     &__expire--month {
       width: 40px;
-      align-self: flex-start;
     }
     &__cvc {
       width: 40px;
