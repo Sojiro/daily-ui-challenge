@@ -1,0 +1,22 @@
+<section>
+  <div class="title">
+    {{title}}
+  </div>
+  <form class="checkout-form" [formGroup]="checkoutForm" novalidate>
+    <div class="form-group">
+      <input class="form-control-input checkout-form__name" type="text" formControlName="name">
+    </div>
+    <div class="form-group">
+      <input class="form-control-input checkout-form__number" type="number" formControlName="cardNumber">
+    </div>
+    <div class="form-group">
+      <div>
+        <input class="form-control-input checkout-form__expire--day" type="number" size="2" maxlength="2"
+               formControlName="expirationDay">
+        <input class="form-control-input checkout-form__expire--month" type="number" size="2" maxlength="2"
+               formControlName="expirationMonth">
+      </div>
+      <input class="form-control-input checkout-form__cvc" type="number" formControlName="cvc">
+    </div>
+  </form>
+</section>
