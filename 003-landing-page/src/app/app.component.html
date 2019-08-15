@@ -1,0 +1,10 @@
+<header>
+  <h1>{{title}}</h1>
+</header>
+<section>
+  <h3>Photography made real!</h3>
+  <img class="random_{{i}}" *ngFor="let image of images; let i = index" src="{{image}}" alt="Random {{i}}">
+</section>
+<!-- <footer>
+  &copy; Ashok M A
+</footer> -->
