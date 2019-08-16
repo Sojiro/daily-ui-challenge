@@ -16,16 +16,16 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    [1, 2, 3, 4].forEach((value) => this.getRandom(value));
+    [1, 2, 3, 4, 5].forEach((value) => this.getRandom(value));
   }
 
   getRandom(value) {
     // return this.unsplash.photos.getRandomPhoto();
-    fetch(`https://source.unsplash.com/random?t=${new Date().getTime()}`).then(
-      (res) => {
-        this.images.push(res.url);
-      }
-    );
+    fetch(
+      `https://source.unsplash.com/random/400x400?t=${new Date().getTime()}`
+    ).then((res) => {
+      this.images.push(res.url);
+    });
     // return new Date();
   }
 }

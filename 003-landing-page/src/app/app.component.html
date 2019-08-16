@@ -3,7 +3,9 @@
 </header>
 <section>
   <h3>Photography made real!</h3>
-  <img class="random_{{i}}" *ngFor="let image of images; let i = index" src="{{image}}" alt="Random {{i}}">
+  <div class="album">
+    <img class="random image_{{i}}" *ngFor="let image of images; let i = index" src="{{image}}" alt="Random {{i}}">
+  </div>
 </section>
 <!-- <footer>
   &copy; Ashok M A
