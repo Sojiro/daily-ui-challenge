@@ -1,0 +1,25 @@
+<article>
+
+  <section>
+    <form (ngSubmit)="evalInputs()" novalidate>
+      <header>
+        <h1>{{title}}</h1>
+      </header>
+      <div class="inputs-result">
+        <div>
+          <input class="inputs" type="text" name="inputs" [value]="inputs" placeholder="" disabled>
+        </div>
+
+        <div>
+          <input class="result" type="text" name="result" [value]="result" placeholder="0.0" disabled>
+        </div>
+      </div>
+
+      <div class="numpad">
+        <button type="button" *ngFor="let item of numpad" (click)="addInput(item)" [value]="item">{{item}}</button>
+        <button type="submit" class="btn-primary">=</button>
+        <button type="reset" (click)="reset()">CE</button>
+      </div>
+    </form>
+  </section>
+</article>
