@@ -1,0 +1,17 @@
+{
+  "name": "006-user-profile",
+  "version": "1.0.0",
+  "description": "DailyUI challenge 006 User Profile",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./"
+  },
+  "keywords": [
+    "DailyUI"
+  ],
+  "author": "Sojiro De Tenken",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

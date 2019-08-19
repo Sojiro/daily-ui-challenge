@@ -1,0 +1,53 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: rgba(170, 255, 255, 0.83);
+  line-height: 2;
+  filter: drop-shadow(0px 1px 0px #8fabda);
+  background: linear-gradient(45deg, #ffeef4, indigo);
+}
+
+article {
+  width: fit-content;
+  height: auto;
+  margin: 0 auto;
+  border: none;
+  box-shadow: 1px 1px 100px 10px gainsboro;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.89);
+  font-size: 32px;
+  margin-top: 0;
+}
+
+section {
+  font-size: 16px;
+}
+
+.profile {
+  width: fit-content;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.avatar {
+  background: url('./sojiro.jpg') center center;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+
+.info {
+  padding-left: 20px;
+  display: table;
+}
