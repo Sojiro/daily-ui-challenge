@@ -7,7 +7,6 @@
 body {
   color: rgba(170, 255, 255, 0.83);
   line-height: 2;
-  filter: drop-shadow(0px 1px 0px #8fabda);
   background: linear-gradient(45deg, #ffeef4, indigo);
 }
 
@@ -17,6 +16,7 @@ article {
   margin: 0 auto;
   border: none;
   box-shadow: 1px 1px 100px 10px gainsboro;
+  filter: drop-shadow(0px 1px 0px #8fabda);
   padding: 20px;
   border-radius: 15px;
 }
@@ -45,9 +45,55 @@ section {
   height: 100px;
   width: 100px;
   border-radius: 100%;
+  cursor: pointer;
+}
+
+.new-avatar {
+  visibility: hidden;
+  position: relative;
+  top: 50px;
+}
+
+.new-avatar > div {
+  background: black;
+  opacity: 0.4;
+  height: 50px;
+  border-radius: 0px 0px 100px 100px;
+  padding: 5px 0px;
+  transition: visibility 0.5s;
+}
+
+.new-avatar i {
+  left: 40px;
+  position: relative;
+}
+
+.avatar:hover > .new-avatar {
+  opacity: 1;
+  visibility: visible;
+  color: inherit;
 }
 
 .info {
-  padding-left: 20px;
+  margin-left: 15px;
   display: table;
+  border: 1px dashed #ffeef4;
+  padding: 5px 15px;
+}
+
+.edit-icon > i {
+  position: relative;
+  left: -10px;
+  top: -10px;
+  height: 24px;
+  width: 24px;
+  border-radius: 10px;
+  background-color: #8756ab;
+  padding: 1px;
+}
+
+.edit-icon > i::before {
+  left: 2px;
+  position: relative;
+  top: 3px;
 }
