@@ -13,6 +13,6 @@
   "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.10.1",
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.2"
   }
 }
